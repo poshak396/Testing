@@ -1,11 +1,11 @@
 const express=require('express')
 const app=express();
 
-app.get('*',(req,res)=>{
+app.get('/',(req,res)=>{
     res.send('Hello World')
 })
 
-const port= 3000 || process.env.PORT
+const port= 3001 || process.env.PORT
 
 app.listen(port,()=>{
     console.log(`Server is up on port ${port}`)
